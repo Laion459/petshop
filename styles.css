@@ -57,7 +57,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #f0d689; /* Cor de destaque para o Pet Shop */
+    color: #f3c742;
+    /* Cor de destaque para o Pet Shop */
 }
 
 /* Seção Hero */
@@ -86,7 +87,7 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f0d689;
+    background-color: #ebc451;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -106,6 +107,52 @@ nav a:hover {
 .section h2 {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product img {
+    width: 100%;
+    height: 200px; /* Altura fixa desejada */
+    object-fit: cover; /* Para garantir que a imagem cubra todo o espaço, mantendo a proporção */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 1em;
+    color: #555;
 }
 
 /* Serviços */
@@ -135,10 +182,12 @@ form {
     flex-direction: column;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
+    border-radius: 12px;
 }
 
 form textarea {
@@ -147,11 +196,12 @@ form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: #f0d689;
+    background-color: #e4ba3d;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    border-radius: 12px;
 }
 
 /* Rodapé */
@@ -168,7 +218,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #f0d689;
+    background-color: #e4bb40;
     color: #fff;
     border: none;
     border-radius: 50%;
